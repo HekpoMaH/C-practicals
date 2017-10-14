@@ -42,6 +42,7 @@ int main(void) {
 
   printf("Freeing the tree\n");
   tree_free(test);
+  tree_free(nwtree);
   return 0;
 }
   

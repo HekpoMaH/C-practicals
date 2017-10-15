@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include<stdio.h>
+#include<assert.h>
 #include "tree.h"
 
 Tree *empty = NULL;
@@ -22,6 +23,7 @@ Tree *tree_insert(int x, Tree *tree) {
     if(tree==NULL){
         tree=(Tree*)malloc(sizeof(Tree));
         tree->value=x;
+        assert(tree->left==NULL);
         printf("%d\n", tree->value);
         return tree;
     }

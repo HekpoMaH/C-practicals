@@ -23,7 +23,8 @@ Tree *tree_insert(int x, Tree *tree) {
     if(tree==NULL){
         tree=(Tree*)malloc(sizeof(Tree));
         tree->value=x;
-        assert(tree->left==NULL);
+        tree->left=NULL;
+        tree->left=NULL;
         printf("%d\n", tree->value);
         return tree;
     }

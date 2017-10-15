@@ -24,7 +24,7 @@ Tree *tree_insert(int x, Tree *tree) {
         tree=(Tree*)malloc(sizeof(Tree));
         tree->value=x;
         tree->left=NULL;
-        tree->left=NULL;
+        tree->right=NULL;
         printf("%d\n", tree->value);
         return tree;
     }
